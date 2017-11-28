@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IMDevDBEntities-Web.config Connection String" description="IMDevDBEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/DAL.Model1.csdl|res://*/DAL.Model1.ssdl|res://*/DAL.Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=MNL02S55580D1\MNL02S55580D1;initial catalog=IMDevDB;persist security info=True;user id=sa;password=sqlS3rver20!4;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\ME004266882\\Desktop\\SEV1\\SevOneHourlyClock\.WebAPI\\SevOneHourlyClock\.WebAPI\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='IMDevDBEntities']/@connectionString" />
+  </parameter>
+  <parameter name="connBackEnd-Web.config Connection String" description="connBackEnd Connection String used in web.config by the application to access the database." defaultValue="Data Source=MNL02S55556D1\ME004266882; Database=DB_SEV1_TMP;User Id=sa;Password=Starckst21;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\ME004266882\\Desktop\\SEV1\\SevOneHourlyClock\.WebAPI\\SevOneHourlyClock\.WebAPI\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='connBackEnd']/@connectionString" />
+  </parameter>
+</parameters>

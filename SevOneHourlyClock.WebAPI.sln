@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SevOneHourlyClock.WebAPI", "SevOneHourlyClock.WebAPI\SevOneHourlyClock.WebAPI.csproj", "{24D45921-79E8-46FA-8B62-B0962B3934DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24D45921-79E8-46FA-8B62-B0962B3934DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24D45921-79E8-46FA-8B62-B0962B3934DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24D45921-79E8-46FA-8B62-B0962B3934DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24D45921-79E8-46FA-8B62-B0962B3934DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9EDF299B-21C4-4CFC-AF91-60D2579F4428}
+	EndGlobalSection
+EndGlobal
