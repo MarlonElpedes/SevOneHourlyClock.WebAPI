@@ -26,13 +26,16 @@ namespace SevOneHourlyClock.WebAPI.Bussiness
                 return (from DataRow dr in dtClockList.Rows
                         select new BoardDetails()
                         {
-                            Title = (string)dr["Title"],
-                            IncidentNumber = (string)dr["IncidentNumber"],
-                            Severity = (string)dr["Severity"],
-                            TechOpBridge = (string)dr["TechOpBridge"],
-                            IMTechLead = (string)dr["IMTechLead"],
-                            Summary = (string)dr["Summary"],
+                            Title = dr["Title"].ToString(),
+                            IncidentNumber = dr["IncidentNumber"].ToString(),
+                            Severity = dr["Severity"].ToString(),
+                            TechBridgeName = dr["TechBridgeName"]?.ToString(),
+                            TechLead = dr["TechLead"]?.ToString(),
+                            AssignedAccount = dr["AssignedAccount"].ToString(),
+                            SkypeLink = dr["SkypeLink"]?.ToString(),
+                            Summary = dr["Description"].ToString(),
                             StartDate = (DateTime)dr["StartDate"],
+                            ConferenceNumber = dr["ConferenceNumber"]?.ToString(),
                             TotalRows = int.Parse(dr["TotalRows"].ToString())
 
                         }).ToList().AsReadOnly();

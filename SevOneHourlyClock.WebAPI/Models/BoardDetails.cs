@@ -12,14 +12,23 @@ namespace SevOneHourlyClock.WebAPI.Models
         [JsonProperty("Incident_Number")]
         public string IncidentNumber { get; set; }
 
+        [JsonProperty("Assigned_Account")]
+        public string AssignedAccount { get; set; }
+
         [JsonProperty("Severity")]
         public string Severity { get; set; }
 
-        [JsonProperty("TechOp_Bridge")]
-        public string TechOpBridge { get; set; }
+        [JsonProperty("Tech_Bridge_Name")]
+        public string TechBridgeName { get; set; }
 
-        [JsonProperty("IMTech_Lead")]
-        public string IMTechLead { get; set; }
+        [JsonProperty("Tech_Lead")]
+        public string TechLead { get; set; }
+        
+        [JsonProperty("Skype_Link")]
+        public string SkypeLink { get; set; }
+
+        [JsonProperty("Conference_Number")]
+        public string ConferenceNumber { get; set; }
 
         [JsonProperty("Summary")]
         public string Summary { get; set; }
