@@ -32,6 +32,8 @@ namespace SevOneHourlyClock.WebAPI.Bussiness
                             TechBridgeName = dr["TechBridgeName"]?.ToString(),
                             TechLead = dr["TechLead"]?.ToString(),
                             AssignedAccount = dr["AssignedAccount"].ToString(),
+                            AssignedAccountId = dr["AssignedAccountId"].ToString(),
+                            AssignedAccountName = dr["AssignedAccountName"].ToString(),
                             SkypeLink = dr["SkypeLink"]?.ToString(),
                             Summary = dr["Description"].ToString(),
                             StartDate = (DateTime)dr["StartDate"],

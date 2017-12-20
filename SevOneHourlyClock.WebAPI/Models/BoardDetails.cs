@@ -12,8 +12,14 @@ namespace SevOneHourlyClock.WebAPI.Models
         [JsonProperty("Incident_Number")]
         public string IncidentNumber { get; set; }
 
+        [JsonProperty("Assigned_Account_Id")]
+        public string AssignedAccountId { get; set; }
+
         [JsonProperty("Assigned_Account")]
         public string AssignedAccount { get; set; }
+
+        [JsonProperty("Assigned_Account_Name")]
+        public string AssignedAccountName { get; set; }
 
         [JsonProperty("Severity")]
         public string Severity { get; set; }
