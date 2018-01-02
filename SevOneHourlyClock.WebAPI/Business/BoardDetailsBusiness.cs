@@ -1,4 +1,5 @@
-﻿using SevOneHourlyClock.WebAPI.Models;
+﻿using SevOneHourlyClock.WebAPI.Commmon;
+using SevOneHourlyClock.WebAPI.Models;
 using SevOneHourlyClock.WebAPI.Persistense;
 using System;
 using System.Collections.Generic;
@@ -23,6 +24,7 @@ namespace SevOneHourlyClock.WebAPI.Bussiness
             var dtClockList = this._boardDetailsPersistense.GetBoardList(mngrNum, skipRow, takerow);
             if (dtClockList.Rows.Count > 0)
             {
+
                 return (from DataRow dr in dtClockList.Rows
                         select new BoardDetails()
                         {
@@ -36,7 +38,8 @@ namespace SevOneHourlyClock.WebAPI.Bussiness
                             AssignedAccountName = dr["AssignedAccountName"].ToString(),
                             SkypeLink = dr["SkypeLink"]?.ToString(),
                             Summary = dr["Description"].ToString(),
-                            StartDate = (DateTime)dr["StartDate"],
+                            StartDate = ((DateTime)dr["StartDate"]).ToEST(),
+                            RemainingSeconds = ((DateTime)dr["StartDate"]).ToRemainSeconds(),
                             ConferenceNumber = dr["ConferenceNumber"]?.ToString(),
                             TotalRows = int.Parse(dr["TotalRows"].ToString())
 
@@ -45,6 +48,9 @@ namespace SevOneHourlyClock.WebAPI.Bussiness
 
             return new ReadOnlyCollection<BoardDetails>(new List<BoardDetails>());
 
-        }
+        }   
+
+        
+
     }
 }
