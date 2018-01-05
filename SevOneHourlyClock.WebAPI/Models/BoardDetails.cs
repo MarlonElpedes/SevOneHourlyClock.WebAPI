@@ -46,7 +46,7 @@ namespace SevOneHourlyClock.WebAPI.Models
         public int TotalRows { get; set; }
 
         [JsonProperty("Remaining_Seconds")]
-        public int RemainingSeconds { get; set; }
+        public double RemainingSeconds { get; set; }
 
     }
 }

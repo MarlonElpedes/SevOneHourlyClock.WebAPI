@@ -7,14 +7,14 @@ namespace SevOneHourlyClock.WebAPI.Commmon
 {
     public static class clsExtension
     {
-        public static int ToRemainSeconds(this DateTime startdate)
+        public static double ToRemainSeconds(this DateTime startdate)
         {
             int hourInSeconds = 3600;
 
             DateTime currentUTCDate = DateTime.UtcNow;
             TimeSpan diffInSeconds = currentUTCDate - startdate;
-            int minToSeconds = diffInSeconds.Minutes * 60;
-            return hourInSeconds - (minToSeconds + diffInSeconds.Seconds);
+            var totalSeconds = diffInSeconds.TotalSeconds;         
+            return totalSeconds > hourInSeconds ? (totalSeconds * -1) : (hourInSeconds - (int)totalSeconds);
         }
 
 
